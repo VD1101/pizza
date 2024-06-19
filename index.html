@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Order Form</title>
+    <title>Order Your Favorite Pizza at VD Pizza</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,10 +16,14 @@
 
     <!-- Main section containing the form -->
     <main>
-        <form action="order_confirmation.html" method="POST">
+        <div class="quote">
+            "Pizza is not just a food, it's an emotion."
+        </div>
+        <form action="#" method="POST">
             <!-- Customer information section -->
             <fieldset>
-                <legend>Customer Information</legend>
+
+                <h3>Customer Information</h3>
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="customer_name" required>
 
@@ -32,23 +36,17 @@
 
             <!-- Pizza details section -->
             <fieldset>
-                <legend>Pizza Details</legend>
+
+                <h3>Pizza Details</h3>
                 <label for="number">Number of Pizzas:</label>
-                <input type="number" id="number" name="pizza_number" min="1" max="10" required>
+                <input type="number" id="number" name="pizza_number" required>
 
                 <label for="size">Size (number of slices):</label>
                 <select id="size" name="pizza_size" required>
-                    <option value="6">6 slices</option>
                     <option value="8">8 slices</option>
                     <option value="10">10 slices</option>
                     <option value="12">12 slices</option>
                 </select>
-
-                <label>Shape:</label>
-                <input type="radio" id="round" name="pizza_shape" value="round" required>
-                <label for="round">Round</label>
-                <input type="radio" id="square" name="pizza_shape" value="square" required>
-                <label for="square">Square</label>
 
                 <label>Crust Type:</label>
                 <select id="crust" name="pizza_crust" required>
@@ -72,49 +70,47 @@
                 <input type="checkbox" id="extra_cheese" name="toppings" value="extra_cheese">
                 <label for="extra_cheese">Extra Cheese</label>
                 <input type="checkbox" id="black_olives" name="toppings" value="black_olives">
-                <label for="black_olives">Black Olives</label>
-                <input type="checkbox" id="green_peppers" name="toppings" value="green_peppers">
-                <label for="green_peppers">Green Peppers</label>
-                <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
-                <label for="pineapple">Pineapple</label>
-                <input type="checkbox" id="spinach" name="toppings" value="spinach">
-                <label for="spinach">Spinach</label>
+            
             </fieldset>
 
             <!-- Order details section -->
             <fieldset>
-                <legend>Order Details</legend>
-                <label for="order-type">Order Type:</label>
-                <input type="radio" id="takeout" name="order_type" value="takeout" required>
-                <label for="takeout">Take Out</label>
-                <input type="radio" id="delivery" name="order_type" value="delivery" required>
-                <label for="delivery">Delivery</label>
-                <input type="radio" id="eat-in" name="order_type" value="eat_in" required>
-                <label for="eat_in">Eat In</label>
 
+                <h3>Order Details</h3>
+                <label for="order-type">Order Type:</label>
+                <input type="radio" id="takeout" name="order_type"equired>
+                <label for="takeout">Take Out</label>
+                <input type="radio" id="eat-in" name="order_type"required>
+                <label for="eat_in">Eat In</label>
+                <br>
                 <label for="delivery_address">Delivery Address:</label>
                 <textarea id="delivery_address" name="delivery_address" rows="4" cols="50"></textarea>
             </fieldset>
 
             <!-- Additional instructions -->
             <fieldset>
-                <legend>Additional Instructions</legend>
+
+                <h3>Additional Instructions</h3>
                 <label for="instructions">Special Instructions:</label>
                 <textarea id="instructions" name="special_instructions" rows="4" cols="50"></textarea>
             </fieldset>
 
             <!-- Submit and reset buttons -->
             <fieldset>
-                <legend>Submit Your Order</legend>
-                <button type="submit">Submit Order</button>
-                <button type="reset">Reset Form</button>
+
+                <h3>Submit Your Order</h3>
+                <button id="sub" type="submit">Submit Order</button>
+                <button id="res" type="reset">Reset Form</button>
             </fieldset>
         </form>
+        <div class="quote">
+            "Good pizza is like the wheel. Perfect as it is. All it needs is to be loved and enjoyed."
+        </div>
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 Pizza Place. All rights reserved.</p>
+        <p>&copy; 2024 VD Pizza. All rights reserved.</p>
         <p><img src="pizza_image.jpeg" alt="A delicious pizza" /></p>
     </footer>
 </body>
